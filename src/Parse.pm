@@ -7,7 +7,7 @@ use File::Spec;
 use FindBin;
 use Data::Dumper;
 
-my $ConfigFile = File::Spec->catfile(dirname(dirname($FindBin::Bin)), "setup.ini");
+my $ConfigFile = File::Spec->catfile(dirname($FindBin::Bin), "setup.ini");
 
 our %PlottingMaps = ();
 our $MaxNumber = 0;

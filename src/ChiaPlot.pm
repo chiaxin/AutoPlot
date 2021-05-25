@@ -14,7 +14,7 @@ my @ChiaAppTokens = (
     "${UserProfile}", "AppData", "Local", "chia-blockchain", "app-1.1.5",
     "resources", "app.asar.unpacked", "daemon", "chia.exe"
 );
-my $ChiaPlotterDirectory = File::Spec->($UserProfile, ".chia", "mainnet", "plotter");
+# my $ChiaPlotterDirectory = File::Spec->catfile($UserProfile, ".chia", "mainnet", "plotter");
 
 # Get last chia-blockchain app version for example "app-1.1.5"
 my $ChiaLocation = File::Spec->catfile(@ChiaAppTokens[ 0 .. 3 ]);

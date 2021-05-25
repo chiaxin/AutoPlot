@@ -5,8 +5,8 @@ use lib $FindBin::Bin;
 use File::Spec;
 use File::Temp qw/tempfile/;
 use Data::Dumper;
-use libs::ChiaPlot;
-use libs::Parse;
+use ChiaPlot;
+use Parse;
 
 $ChiaPlot::Memory = $Parse::Memory;
 $ChiaPlot::Threads= $Parse::Threads;
@@ -76,4 +76,4 @@ sub run
     sleep(10);
 }
 
-run;
+scan;
